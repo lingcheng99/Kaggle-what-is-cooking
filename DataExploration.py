@@ -24,10 +24,10 @@ for ingredient in all_ingredients:
     train[ingredient]=train.ingreC.apply(lambda x:ingredient in x)
    
 
-#Groupby.sum() to get the number of times each ingredient appeared in a particular cuisine
+#Use groupby.sum() to get the number of times each ingredient appeared in a particular cuisine
 train_g1=train.drop(['ingredients','id','ingreC'],axis=1)
 train_g2=train_g1.groupby('cuisine').sum()
-train_g3=train_g2.tranpose
+train_g3=train_g2.tranpose()
 
 #Now the dataframe is ready to be examined and plotted, by each cuisine
 train_g3.italian.order(ascending=False)[:10]
