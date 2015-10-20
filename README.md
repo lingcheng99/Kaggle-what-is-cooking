@@ -1,8 +1,8 @@
 # Kaggle-what is cooking
 
-    DataExploration.py to explore the data and show ten most-used ingredients for each cuisine
+    DataExploration.py to explore the data and show most-used ingredients for each cuisine
 
-    CrossValidation to tune parameters with GridSearchCV
+    CrossValidation.py to tune parameters with GridSearchCV
 
     submission.py for the final submission
 
